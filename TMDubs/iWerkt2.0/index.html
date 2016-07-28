@@ -12,7 +12,7 @@
   </head>
   <body>
       
-   <!-- <div class='home' id='greenScreen'>
+   <!--<div class='home' id='greenScreen'>
       <div id='appLinks'><a href='https://itunes.apple.com/us/app/iwerkt/id1097698969?mt=8'>iOS</a> | <a href='https://play.google.com/store/apps/details?id=com.ivymdl.iwerkt'>Android</a></div>
       <div id='logo'>iWERKT</div>
       <div class='subTitle'>DIGITAL VOUCHERS 4 MODELS</div>
@@ -26,7 +26,7 @@
         <p>No more piles of fly-away papers.</p>
         <p>No lost vouchers.</p>
         <p>No waiting around until you have the chance to get them to your agency.</p>
-        <p class='text'>Get your client's signature right on your phone.</p> 
+        <p class='text' id='npText'>Get your client's signature right on your phone.</p> 
         <p>Hit send and GO!</p>
       </div>
       <div class='screenShots'>
@@ -34,16 +34,16 @@
         <div id='noPaperImg02'><img src='/img/calendarViewBlackPhone_631x800.png'></div> 
       </div>  
     </div>
-    <div id='keepTrackContainer'>
+
+    <div class='keepTrackContainer'>
       <div class='title' id='keepTrackTitle'>Keep track of everything.</div>
-        <div class='content' id='keepTrackContent'>
-          <p>Track your income, keep tabs on whether or not you've been paid for a job, maintain client information, and export your data for tax prep.</p>
-        </div>
-      <div class='keepTrackImg'><img src='/img/homeViewHorizontalePullOut.png'>
+      <div class='content' id='keepTrackContent'>
+        <p>Track your income, keep tabs on whether or not you've been paid for a job, maintain client information, and export your data for tax prep.</p>
       </div>
-      <div class='keepTrackImg'><img src='/img/voucherView.png'>
-      </div>
-      <div class='keepTrackImg'><img src='/img/timePickerView.png'>
+      <div id='keepTrackImgContainer'>
+        <div id='keepTrackImg'><img src='/img/homeViewHorizontalePullOut.png'></div>
+        <div id='keepTrackImg'><img src='/img/voucherView.png'></div>
+        <div id='keepTrackImg'><img src='/img/timePickerView.png'></div>
       </div>
     </div>
 
@@ -52,7 +52,7 @@
         <img src='/img/loginView.png'>
       </div>
       <div class='contentContainer'>
-        <div class='title' id='getPaidTitle'>Get paid faster.</div>
+        <div class='title' id='getPaidTitle'>Get paid <i>faster.</i></div>
         <div class='content' id='getPaidContent'>
           <p>Instant delivery.</p>
           <p>Fewer mistakes.</p>
@@ -67,25 +67,25 @@
     <div class='getAppContainer'>
       <div class='title' id='getAppTitle'><a href='https://itunes.apple.com/us/app/iwerkt/id1097698969?mt=8'>Get the app.</a></div>
       <div class='content' id='getAppContent'><p>(it's free)</p>
-        </div>
         <div class='getAppIconsLarge'>
-          <div id='iosAppIconL'><a href='https://itunes.apple.com/us/app/iwerkt/id1097698969?mt=8'><img src='/img/appStoreBadge.svg'></a>
-          </div>
+          <div id='iosAppIconL'><a href='https://itunes.apple.com/us/app/iwerkt/id1097698969?mt=8'><img src='/img/appStoreBadge.svg'></a></div>
           <div id='androidAppIconL'><a href='https://play.google.com/store/apps/details?id=com.ivymdl.iwerkt&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a></div>
         </div>
-      </div>
+      </div>  
+    </div>
     
     <div class='footer'>
+      <span id='copyright'><a href='#'>&copy NordikLabs 2016</a></span>
       <div class='leftSide'>
-        <span class='copyright'><a href='#'>&copy NordikLabs</a></span>
         <span class='footerLink'><a href='/privacy.html'>Privacy</a></span>
-        <span class='footerLink'><a href='/terms.html'>Terms of Use</a></span>
+        <span class='footerLink'><a href='/terms.html'>Terms</a></span>
       </div>   
       <div class='rightSide'>     
         <span class='footerLink'><a href='/faq.html'>Need Help?</a></span> 
         <span class='footerLink'><a href='mailto:&#105;&#110;&#102;&#111;&#64;&#105;&#119;&#101;&#114;&#107;&#116;&#46;&#99;&#111;&#109'>Contact</a></span>
-        <span class='footerLink'><a href='#'><i class='fa fa-facebook'></i></a></span>
-        <span class='footerLink'><a href='#'><i class='fa fa-twitter'></i></a></span>
+        <span class='footerLink'><a href='https://www.facebook.com/iwerkt/'><i class='fa fa-facebook'></i></a></span>
+        <span class='footerLink'><a href='https://twitter.com/iwerkt'><i class='fa fa-twitter'></i></a></span>
+        <span class='footerLink'><a href='https://www.instagram.com/iwerkt/?hl=en'><i class='fa fa-instagram'></i></a></span>
       </div>
     </div>
   
