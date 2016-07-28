@@ -278,7 +278,6 @@ body {
   height: 100%;
   clear: both;
   float: left;
-  padding-bottom: 10%;
 }
 
 #getAppTitle {
@@ -293,31 +292,18 @@ body {
   text-align: center;
 }
 
-.getAppLinksLarge {
-  max-width: 75%;
-  margin: -3% auto 0 auto;
-}
-
 .getAppIconsLarge {
-  width: 22.8%;
-  margin: 10% auto 0 auto;
+  width: 100%;
+  margin: 5% auto;
   text-align: center;
-  display: block;
 }
 
-.iosAppIconLarge {
-  background: url('/img/appStore.png') no-repeat;
-  background-size: contain;
-  height: 80px;
-  display: block;
+#iosAppIconL img {
+  width: 25%;
 }
 
-.androidAppIconLarge {
-  background: url('/img/gPlay.png') no-repeat;
-  background-size: contain;
-  height: 80px;
-  display: block;
-  margin-top: 30px;
+#androidAppIconL img {
+  width: 28.5%;
 }
 
 /*-----------FOOTER------------*/
@@ -385,7 +371,7 @@ body {
 
 /*-------RESPONSIVENESS---------*/
 
-@media screen and (max-width: 480px) {
+/*@media screen and (max-width: 480px) {
   #logo {
     font-size: 80px;
   }
@@ -451,34 +437,25 @@ body {
   #getPaidContainer {
     height: 130vh;
   }
-}
+}*/
 
-  
 @media screen and (max-width: 480px) {
   .getAppIconsLarge {
-    margin-top: 12%;
     margin-left: 35%;
   }
   .androidAppIconLarge {
-    margin-top: -60%;
     width: 125%;
   }
   .iosAppIconLarge {
     width: 125%;
   }
-
   #getAppTitle {
     margin-top: 3%;
   }
 }
 
-@media screen and (min-width: 320px) {
-  .getAppContainer {
-    height: 90vh;
-  }
-}
 
-@media screen and (max-width: 480px) {
+/*@media screen and (max-width: 480px) {
   .footer {
     font-size: 9px;
     height: 6vh;
