@@ -57,13 +57,10 @@ body {
   width: 100vw;
 }
 
-.home {
-  position: absolute;
+#greenScreen {
   width: 100vw;
   height: 100vh;
-}
-
-#greenScreen {
+  position: relative;
   background: rgba(0, 224, 213, 0.4); 
 }
 
@@ -72,9 +69,11 @@ body {
   text-align: center;
   font-size: 275px;
   color: #fff;
+  height: 40%;
   font-weight: lighter;
   margin-top: 4%;
   opacity: 0;
+  letter-spacing: 4px;
   -moz-animation: fadein 2.25s ease-in 1.25s forwards; 
   -webkit-animation: fadein 2.25s ease-in 1.25s forwards; 
   -o-animation: fadein 2.25s ease-in 1.25s forwards; 
@@ -83,12 +82,13 @@ body {
 
 .subTitle {
   text-align: left;
-  margin-left: 15.2%;
+  margin-left: 14.8%;
   font-family: Gibson-Regular, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: lighter;
   color: #fff;
   font-size: 30px;
   opacity: 0;
+  letter-spacing: 3px;
   -moz-animation: fadein .5s ease-in 3s forwards; 
   -webkit-animation: fadein .5s ease-in 3s forwards; 
   -o-animation: fadein .5s ease-in 3s forwards;
@@ -100,6 +100,31 @@ body {
   font-size: 30px;
   color: #fff;
   padding: 2%;
+  margin-left: 1%;
+  opacity: 0;
+  letter-spacing: 3px;
+  width: 50%;
+  -moz-animation: fadein .5s ease-in 3.5s forwards; 
+  -webkit-animation: fadein .5s ease-in 3.5s forwards; 
+  -o-animation: fadein .5s ease-in 3.5s forwards; 
+  animation: fadein .5s ease-in 3.5s forwards;
+}
+
+#socialNav {
+  margin-right: 3%;
+  margin-top: 2%;
+  float: right;
+}
+
+#socialLinks {
+  list-style: none;
+  font-size: 35px;
+  text-align: right;
+}
+
+#socialLinks li {
+  margin-left: 3vw;
+  float: left;
   opacity: 0;
   -moz-animation: fadein .5s ease-in 3.5s forwards; 
   -webkit-animation: fadein .5s ease-in 3.5s forwards; 
@@ -127,19 +152,10 @@ body {
   margin-top: 4%;
 }
 
-@media screen and (max-width: 480px) {
-  .content {
-    font-size: 15px;
-    text-align: center;
-  }
-  .title {
-    font-size: 50px;
-  }
-}
-
 /*------NO PAPER SECTION-------*/
 
 .noPaperContainer {
+  position: relative;
   width: 100vw;
   height: 100%;
   background: #f46853;
@@ -176,7 +192,7 @@ body {
 
 #keepTrackContent {
   width: 60vw;
-  margin: 2% auto;
+  margin: 2% auto 0 auto;
   line-height: 1.5;
 }
 
@@ -197,7 +213,7 @@ body {
 #keepTrackImg {
   color: #fff;
   float: left;
-  margin-top: 3%;
+  margin-top: 6%;
   margin-left: 4%;
   width: 28%;
   line-height: 0;
@@ -370,21 +386,45 @@ body {
 /*-----------------RESPONSIVENESS----------------*/
 
 
+/*------VARIABLES-----------*/
+
+@media screen and (max-width: 480px) {
+  .content {
+    font-size: 15px;
+    text-align: center;
+  }
+  .title {
+    font-size: 50px;
+  }
+}
+
 /*---------HOME------------*/
 @media screen and (max-width: 320px) {
   #logo {
     font-size: 80px;
+    margin-top: 25%;
+    height: 22%;
   }
-  
   .subTitle {
-    font-size: 12px;
+    width: 100%;
+    margin-left: 0;
+    font-size: 14px;
     text-align: center;
-    margin: -5% auto;
+    margin-top: -5%;
   }
-
   #appLinks {
-    font-size: 12px;
+    font-size: 14px;
+    padding: 5% 4% 4% 4%;
   }
+  #socialNav {
+    margin-top: 4%;
+    margin-right: 6%;
+  }
+  #socialLinks {
+  font-size: 20px;
+  }
+  #socialLinks li {
+  margin-left: 4vw;
 }
 /*-------NO PAPER--------*/
 @media screen and (max-width: 320px) {
